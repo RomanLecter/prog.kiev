@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Archivo', serif;
+}
+
+.contener {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.tittle {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 70px;
+    letter-spacing: 0.1em;
+    color: lightsalmon;
+    text-align: center;
+    font-family: 'M PLUS 1', sans-serif;
+}
+
+.main {
+    background-image: url(/img/design3.jpg);
+    background-repeat: no-repeat;
+    width: 93.7%;
+    padding-top: 336px;
+    padding-bottom: 521px;
+    padding-left: 80px;
+    
+
+}
+
+.main-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100.3%;
+    color: whitesmoke;
+    text-shadow: 1px -3px 3px salmon;
+    display: inline-block;
+    width: 600px;
+    margin-left: 400px;
+    margin-top: -200px;
+    font-family: 'Marcellus SC', serif;
+}
+
+.box {
+    margin-top: 72px;
+    width: 88.5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-title div {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 157.3%;
+    text-align: center 
+}
+
+.box-title hr {
+    height: 5px;
+    background-color: salmon;
+    width: 99.3%;
+    margin: 0; 
+}
+
+.cards {
+    margin-top: 33px;
+
+}
+
+.card {
+    text-decoration: none;
+    display: inline-block;
+    max-width: 31%;
+    min-height: 481px;
+    box-shadow: 0px 4px 57px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    vertical-align: text-top;
+    height: 100% !important;
+}
+
+.card-margin {
+    margin: 0 3%;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 157.3%;
+    color: lightblue;
+    padding-left: 10px;
+    margin-top: 16px;
+}
+
+.box-tittle-maprest div {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 157.3%;
+    text-align: center
+}
+
+.box-tittle-maprest hr {
+    height: 5px;
+    background-color: salmon;
+    width: 99.3%;
+    margin: 0;
+    
+}
+
+.card-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 157.3%;
+    color: salmon;
+    display: inline-block;
+    width: 75%;
+    padding-left: 10px;
+    padding-bottom: 50px;
+}
+
+.picture-map {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.box-sub {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.box-sub a {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 157.3%;
+    background-color: salmon;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 92px;
+}
+
+.contact {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.1em;
+    display: block;
+    text-align: center;
+    color: #A89D9D;
+    text-decoration: none;
+    margin-top: 20px;
+    font-family: 'Marcellus SC', serif;
+}
+.social {
+    margin-top: 20px;
+    padding-bottom: 27px;
+    text-align: center;;
+    text-decoration: none;
+}
