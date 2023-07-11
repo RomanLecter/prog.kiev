@@ -8,7 +8,7 @@ body {
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    background-image: url(/img/uzor1.png);
+    background-image: url(./img/uzor1.png);
     background-repeat: repeat;
 }
 
@@ -33,7 +33,7 @@ body {
 }
 
 .main {
-    background-image: url(/img/design3.jpg);
+    background-image: url(./img/design3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 500px;
