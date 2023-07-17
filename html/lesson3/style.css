@@ -4,7 +4,7 @@
 
 
 body {
-    font-family: 'Archivo', serif;
+    
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -12,50 +12,71 @@ body {
     background-repeat: repeat;
 }
 
+
 .contener {
-    max-width: 1440px;
+    max-width: 100;
     margin: 0 auto;
 }
+
 
 .header {
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
+
 .tittle {
     font-weight: 600;
     font-size: 48px;
     line-height: 70px;
     letter-spacing: 0.1em;
+    text-shadow: 2px -4px 3px white;
     color: salmon;
     text-align: center;
-    font-family: 'M PLUS 1', sans-serif;
 }
+
+h2 {
+	position: absolute;
+	right: -31px;
+	width: 100%;
+    font-size: 51px;
+}
+
+h2 span.spacer {
+	padding	: 0 5px;
+}
+
+h2 span {
+	color: white;
+	letter-spacing: -1px;
+	padding	: 10px;
+    font-family: archivo;
+}
+
 
 .main {
-    background-image: url(./img/design3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-bottom: 500px;
+    height: 75vh;
+    width: 98.5vw;
+    display: grid;
+    place-items: center;
+    background: url(./img/design322.jpg) fixed no-repeat center/cover;
 }
 
-.mainsushi {
-    padding-top: 195px;
-    padding-left: 80px
-}
 
 .main-title {
-    padding-left: 397px;
     width: 1050px;
     color: salmon;
     font-size: 48px;
-    font-weight: 400;
-    line-height: 150%;
-    text-align: left;
     text-shadow: 8px -6px 8px rgb(255, 253, 253);
-    
+    text-align: center;
 }
 
+.boxmap {
+    margin-top: 72px;
+    width: 88.5%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .box {
     margin-top: 72px;
     width: 88.5%;
@@ -102,7 +123,7 @@ body {
 
 .cards {
     margin-top: 33px;
-
+    
 }
 
 .card {
@@ -112,7 +133,6 @@ body {
     min-height: 481px;
     box-shadow: 0px 4px 57px 3px rgba(0, 0, 0, 7);
     border-radius: 30px;
-    vertical-align: center;
     height: 100% !important;
     background-color: rgba(255,255,255,0.9);
     
@@ -170,7 +190,7 @@ body {
     letter-spacing: 0.1em;
     display: block;
     text-align: center;
-    color: #A89D9D;
+    color: #706e6e;
     text-decoration: none;
     margin-top: 20px;
     font-family: 'Marcellus SC', serif;
@@ -178,10 +198,18 @@ body {
 .social {
     margin-top: 20px;
     padding-bottom: 27px;
-    text-align: center;;
-    text-decoration: none;
+    text-align: center;
 }
 
 a {
     text-decoration: none;
 }
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: salmon;
+    color: #ffffff;
+    margin-right: 790px;
+    margin-left: 790px;
+  }
