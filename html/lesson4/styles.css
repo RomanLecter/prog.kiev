@@ -27,12 +27,13 @@ body{
 }
 
 .box{
-    max-width: 1466px;
+    max-width: 1388px;
     margin: 0 auto;
 }
 
 button{
     cursor: pointer;
+   
 }
 h1,h2{
     margin: 0;
@@ -106,20 +107,20 @@ address{
     position: absolute;
     font-family: var(--secondary-font);
     top: 77px;
-    width: 1466px;
+    width: 1388px;
     font-size: 60px;
     text-align: center;
     color: #35040C;
 }
 
 .choco{
-    max-width: 1466px;
+    max-width: 1388px;
     margin: 0 auto;
 }
 
 .zavod{
     margin-top: 40px;
-    width: 1466px;
+    width: 1388px;
     height: 421px; 
     border-color: rgba(53, 4, 12, 1);
     border-width: 4px;
@@ -127,10 +128,11 @@ address{
 }
 
 .button{
-    width: 1466px;
+    width: 1388px;
     text-align: center;
     position: absolute;
-    top: 183px;
+    top: 169px;
+    right: 231px;
 }
 
 .but{
@@ -144,6 +146,60 @@ address{
     color: #040404; 
 }
 
+.pravo{
+    width: 55px;
+    height: 55px;
+    border: none; 
+    background: transparent;
+    background-color: transparent;
+    background-image: url('img/right-arrow.png');
+    background-size: cover;
+    position: absolute;
+    right: 287px;
+    top: 220px;
+    cursor: pointer;
+}
+
+
+.levo{
+    width: 55px;
+    height: 55px;
+    border: none; 
+    background: transparent;
+    background-color: transparent;
+    background-image: url('img/left-arrow.png');
+    background-size: cover;
+    position: absolute;
+    left: 287px;
+    top: 220px;
+    cursor: pointer;
+}
+
+.levo:hover {
+    opacity: 0.3;
+  }
+  
+.levo:active {
+    transform: scale(0.95);
+  }
+
+
+.pravo:hover {
+    opacity: 0.3;
+  }
+  
+.pravo:active {
+    transform: scale(0.95);
+  }
+
+.but:hover {
+    opacity: 0.3;
+  }
+  
+.but:active {
+    transform: scale(0.95);
+  }
+
 .notice{
     width: 100%;
 }
@@ -151,6 +207,7 @@ address{
 .notice-list{
     height: inherit;
     display: flex;
+    list-style-type: none;
 }
 
 .notice-item{
@@ -165,6 +222,7 @@ address{
 .notice-list h2{
     text-align: left;
     font-size: 18px;
+    
 }
 
 .notice-list p{
@@ -188,10 +246,11 @@ address{
 
 #contacts{
     width: 100%;
-    height: 70px;
+    height: 117px;
     background-color: rgb(140, 10, 13, 1);
     font-size: 14px;
     font-weight: 700;
+    
 }
 
 .conlist{
@@ -203,19 +262,18 @@ address{
 
 .conitem{
     display: inline-block;
-    padding-top: 12px;
+    padding-top: 35px;
 }
 
 .conlist li a{
     display: inline-block;
     color: #F6CC79;
-    padding: 0 33px;
+    padding: 0 30px;
 }
 
 .conlist li a:hover{
     color: #FDE092;
 }
-
 
 
 a {
