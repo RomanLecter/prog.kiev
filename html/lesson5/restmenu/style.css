@@ -23,7 +23,7 @@ img{
 }
 
 .bigmegabox{
-    background-color: rgba(212, 242, 242, 0.671);
+    background-image: linear-gradient(-110deg, #f5f5f5, rgb(117, 180, 216));
 }
 
 body{
@@ -50,7 +50,7 @@ p:first-child {
 
 .line{
     
-    text-decoration-color: rgba(113, 113, 159, 0.774);
+    text-decoration-color: rgba(117, 180, 216, .745);
     text-decoration-line: line-through;
     text-decoration-style: wavy;
     color: #D4F2F2;
