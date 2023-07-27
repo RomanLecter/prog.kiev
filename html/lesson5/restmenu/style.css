@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+img{
+    height: 120px;
+    width: 145px;
+}
+
+.image{
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
+    transition: 1s;
+    margin-right: 40px;
+}
+
+.image:hover{
+    -webkit-filter: opacity(0.5);
+    filter: opacity(0.5);
+}
+
+.bigmegabox{
+    background-color: rgba(212, 242, 242, 0.671);
+}
+
+body{
+    width: 755px;
+    margin: 0 auto;
+    hyphens: auto;
+}
+
+.box{
+    width: 720px;
+    padding-left: 15px;
+}
+
+p:first-child {
+    margin-left: 10px;
+    padding-top: 20px;
+}
+
+.box::first-line {
+    font-size: 30px;
+    font-weight: 600;
+    color: #531604;
+}
+
+.line{
+    
+    text-decoration-color: rgba(113, 113, 159, 0.774);
+    text-decoration-line: line-through;
+    text-decoration-style: wavy;
+    color: #D4F2F2;
+    text-align: left;
+}
+
+div[class^="njam"] {
+    height: 130px;
+    padding: 10px 5px 10px 5px;
+    display: flex;
+}
+
+.name a{
+    font-weight: 600; 
+    font-size: 20px;
+    color: #B78D41;
+    text-decoration: none;
+    transition: 0.5s;
+ }
+ 
+ .name a:hover{
+     color: #979606;
+ }
+ 
+ .price{
+     font-weight: 600; 
+     font-size: 20px;
+     color: #979606;
+ }
+
+ .njamka-item{
+    margin-top: 15px;
+    line-height: 1.5;   
+ }
+
+ div[class$="item"] {
+    color: #54656F;
+}
+
+.name li{
+    align-items: baseline; /* Выравниваем текст */
+    display: flex;
+}
+
+.name li::before {
+    content: ''; /* Выводим линию */
+    border-bottom: 1px dashed rgba(51, 44, 44, 0.495); /* Параметры линии */
+    flex-grow: 1; /* Линия занимает всё доступное пространство */
+    order: 2; /* Выводим вторым */
+    margin: 0 5px; /* Расстояние от текста */
+   
+   }
+   .name .price {
+    order: 3; /* Выводим третьим */
+   }
