@@ -1,0 +1,718 @@
+:root {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    --blue: #1561cc;
+    --white: #ffffff;
+    --black: #11100f;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 2000px) {
+    body {
+        min-width: 1200px;
+        width: 100%;
+        height: 100%;
+    }
+
+    header {
+        min-width: 1200px;
+        width: 100%;
+    }
+
+    .container, .container1 {
+        min-width: 1150px;
+        width: 100%;
+    }
+
+    .footer-table {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+
+    .bmw {
+        margin: 0 auto;
+        justify-content: space-around;
+        align-items: flex-start;
+        column-gap: 5%;
+    }
+    .adding{
+        column-gap: 9%;
+        align-items: center;
+       justify-content: space-evenly;
+    }
+ 
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+    body {
+        min-width: 600px;
+        width: 100%;
+        height: 100%;
+    }
+
+    header {
+        min-width: 600px;
+        width: 100%;
+
+    }
+
+    .container, .container1 {
+        min-width: 550px;
+        width: 100%;
+    }
+
+    .bmw {
+        flex-direction: column;
+        align-items: center;
+    }
+    .adding{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+}
+
+
+a {
+    text-decoration: none;
+    text-transform: none;
+}
+
+body {
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+button {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 27.4px;
+    height: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+}
+
+
+.container {
+    margin-top: 20px;
+}
+
+/*------Header-------*/
+
+header {
+    background-color: var(--black);
+}
+
+.header1 {
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header1 a {
+    color: var(--white);
+}
+
+.contact ul {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    line-height: 72px;
+    font-weight: 700;
+}
+
+
+.short-button {
+    width: 124px;
+    color: var(--blue);
+    background-color: var(--white);
+
+}
+
+.hoverg:hover {
+    background-color: #4dc251;
+    color: white;
+}
+
+
+li>i {
+    color: var(--blue);
+    margin-right: 10px;
+    align-items: center;
+}
+
+
+.header1 img {
+    width: 55px;
+    height: 49px;
+}
+
+
+/*HEADER 2*/
+
+.header2 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5%;
+    text-align: center;
+}
+
+.logo ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.logo img {
+    position: absolute;
+    max-width: 500px;
+    width: 100%;
+}
+
+.mercedes {
+    right: 34%;
+}
+
+.logo-back {
+    font-family: 'Montserrat';
+    width: 100%;
+    font-size: 100px;
+    line-height: 72px;
+    font-weight: 700;
+    text-shadow: 0px 0px 165px rgb(0 0 0 / 85%);
+    color: #131210;
+    padding: 0 0 0.4em 0;
+}
+
+.dot-container {
+    position: absolute;
+    right: 4%;
+    top: 65%;
+}
+
+.dot-container span {
+    margin-bottom: 10px;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    background-color: #3c3c3c;
+    border-radius: 50%;
+    display: block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+    background-color: #135ec5;
+}
+
+.header3 {
+    width: 100%;
+    text-align: center;
+    margin-top: 300px;
+    font-size: 30px;
+    line-height: 72px;
+    font-weight: 700;
+    color: #3c3c3c;
+    padding-bottom: 60px;
+}
+
+
+.header3 p {
+    color: var(--white);
+    font-size: 18px;
+}
+
+.search-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.s-list-item {
+    border-bottom: 1px;
+    border-bottom: solid;
+    width: 18%;
+    text-align: left;
+}
+
+.button-foot {
+    color: var(--white);
+    width: 210px;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 28px 28px 0 0;
+}
+
+.button-foot:hover {
+    background-color: #544caf;
+    color: var(--black);
+}
+
+
+.long-button {
+    color: var(--white);
+    width: 210px;
+    background-color: #135ec5;
+    border: none;
+}
+
+.long-button:hover {
+    background-color: #201d3f;
+    color: var(--black);
+}
+
+/*menu model*/
+
+main {
+    width: 100%;
+}
+
+.model {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 72px;
+    color: #c1c1c1;
+    border-bottom: solid;
+    margin-bottom: 30px;
+    padding: 3% 0 3% 0;
+}
+
+.model p {
+    margin-bottom: 3%;
+}
+
+.model-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.zoom {
+    transition: transform 1.2s;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+
+/*BMW text*/
+
+.bmw-back {
+    font-size: 160px;
+    line-height: 55px;
+    font-weight: 700;
+    text-shadow: 0px 0px 25px rgb(0 0 0 / 18%);
+    color: white;
+}
+
+.bmw {
+    padding: 10% 5% 10% 5%;
+    display: flex;
+    width: 80%;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 48px;
+    font-weight: 400;
+    color: #c1c1c1;
+    
+}
+
+.bmw-text p:nth-child(1) {
+    font-family: 'Montserrat';
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 700;
+    color: #135ec5;
+    margin-bottom: 3%;
+}
+
+.bmw-text p {
+    margin-bottom: 5%;
+}
+
+/*BLOCK*/
+
+.add-blok {
+    width: 100%;
+    height: 541px;
+    background-color: #135ec5;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.add-blok-intro h1 {
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 700;
+    color: var(--white);
+    margin: 4% 0 2% 0;
+}
+
+.add-blok-intro {
+    width: 100%;
+    padding: 3% 0 5% 0;
+}
+
+.add-blok-intro img {
+    margin: 2%;
+}
+
+.add-btn {
+    color: var(--white);
+    width: 214px;
+    background-color: #135ec5;
+    border: 3px solid #ffffff;
+    margin: 4%;
+}
+
+.add-btn:hover {
+    background-color: #4dc251;
+    color: var(--black);
+    border-color: blue;
+}
+
+.adding {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 30%;
+    margin-bottom: 20%;
+}
+
+
+.fresh {
+    color: var(--blue);
+    background-color: var(--white);
+    float: right;
+    border: none;
+    height: 29px;
+    width: 88px;
+    border-radius: 14.5px;
+}
+
+.logo-furie {
+    font-family: 'Montserrat';
+    font-size: 132px;
+    line-height: 90px;
+    font-weight: 700;
+    color: #135EC5;
+    padding: 0 0 0.4em 0;
+    text-shadow: 0px 0px 165px #37478d;
+    text-align: initial;
+    padding: 8% 0 0 0;
+    letter-spacing: 10px;
+}
+
+.logo-small-car {
+    text-align: center;
+}
+
+.add-small {
+    width: 28em;
+    height: 37em;
+    box-shadow: 0px 0px 85px 0px rgb(5 37 81 / 7%);
+    overflow: hidden;
+    margin-left: 4%;
+    font-weight: 700;
+}
+
+.header-add-small {
+    position: relative;
+    background-color: #135ec5;
+    height: 30%;
+}
+
+.header-add-small button {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+.main-small-car {
+    margin-top: 30%;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.main-small-car h1 {
+
+    font-size: 30px;
+    line-height: 72px;
+    color: #000000;
+}
+
+.main-small-car p {
+
+    font-size: 14px;
+    line-height: 20px;
+    color: #135ec5;
+}
+
+.about-car {
+    font-size: 18px;
+    line-height: 72px;
+    font-weight: 400;
+    color: #c1c1c1;
+}
+
+.capcelbutton {
+    width: 192px;
+    height: 49px;
+    border: none;
+    color: var(--white);
+    background-color: #e2e2e2;
+    border-radius: 24.5px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.befor::before {
+    content: "15.000$";
+    font-size: 30px;
+    line-height: 72px;
+    margin-right: 10px;
+    color: #4dc251;
+    margin-right: 30px;
+}
+
+
+.add-big {
+    overflow: hidden;
+    width: 50em;
+    height: 45em;
+    box-shadow: 0px 0px 85px 0px rgb(5 37 81 / 7%);
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.big-left {
+    width: 55%;
+    display: grid;
+    align-items: center;
+    margin: 3% 0 5% 5%;
+}
+
+.first-line {
+    font-size: 14px;
+    line-height: 72px;
+    font-weight: 700;
+    color: #e2e2e2;
+}
+
+.first-line::after {
+    content: "15.000$";
+    font-size: 30px;
+    line-height: 72px;
+    font-weight: 700;
+    color: #4dc251;
+    margin-left: 100px;
+}
+
+.name-line {
+    font-size: 30px;
+    font-weight: 700;
+    color: #135ec5;
+}
+
+.big-left p {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 48px;
+    font-weight: 400;
+    color: #c1c1c1;
+    width: 20em;
+    align-self: stretch;
+}
+
+.big-right {
+    width: 57%;
+    background-color: #135EC5;
+    position: relative;
+}
+
+.big-right button {
+    position: absolute;
+    top: 11%;
+    right: 10%;
+}
+
+.big-right img {
+    position: absolute;
+    top: 27%;
+    right: -24%;
+}
+
+.dot-container2 {
+    position: absolute;
+    right: 40%;
+    display: flex;
+    top: 88%;
+    column-gap: 15px;
+}
+
+
+.dot2 {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    background-color: #3c3c3c;
+    border-radius: 50%;
+    display: block;
+    transition: background-color 0.6s ease;
+}
+
+.dot2:hover {
+    background-color: #ffffff;
+}
+
+
+
+
+/*TABLE MENU*/
+
+
+.table-maine {
+    background-color: #fff;
+    box-shadow: 0px 0px 85px 0px rgb(5 37 81 / 7%);
+    overflow-x: auto;
+    margin-bottom: 20%;
+}
+
+.table-main {
+    width: 100%;
+    padding-top: 45px;
+}
+
+.table-main tr td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 50px 55px 0;
+}
+
+.table-main tr td:first-child {
+    padding-left: 50px;
+}
+
+.table-main tr:nth-last-child(3) td {
+    padding-top: 50px;
+}
+
+.table-main tr:last-child td {
+    padding-bottom: 55px;
+}
+
+.table-main tr td.block-logo {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 5px;
+}
+
+.block-logo table {
+    width: 100%;
+    margin-top: 40px;
+
+    padding-bottom: 10px;
+
+}
+
+.block-logo table tr td {
+    text-align: center;
+}
+
+.place::after {
+    content: "\f041";
+    font-size: xx-large;
+    font-family: 'FontAwesome';
+    opacity: 0.5;
+    color: #E2E2E2;
+    background-color: #c1c1c100;
+    position: absolute;
+    top: 15%;
+    right: 52%;
+}
+
+.block-one1 {
+    border-bottom: 1px solid #f5f5f5;
+    position: relative;
+}
+
+.block-one input {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-bottom: 1px solid #ebebeb;
+    padding: 20px 10px 20px 0px;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+}
+
+.foot {
+    text-transform: none;
+}
+
+.block-one input::placeholder {
+    font-weight: 700;
+    color: #c1c1c1;
+    font-size: 18px;
+}
+
+.block-two {
+    background-color: var(--blue);
+}
+
+.block-two button {
+    width: 200px;
+    height: 55px;
+    background-color: #ffffff;
+    border-radius: 27.5px;
+}
+
+.block-two input {
+    border-bottom: 1px solid #3676ce;
+    color: #fff;
+}
+
+.block-two input::placeholder {
+    color: #3676ce;
+}
+
+.table-main tr td.btn-block {
+    padding-bottom: 0;
+    
+}
