@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, serif;
+    font-weight: 300;
+}
+
+a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+div form p input[type=submit] {
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 6% 2%;
+    margin: 5% 0;
+    border: none;
+    transition: all .25s;
+    background: linear-gradient(90deg, rgba(233, 117, 9, 0.685) 0%, rgb(84, 209, 34) 35%, rgba(243, 0, 255, 1) 100%);
+}
+
+input[type=submit]:hover{
+    background: linear-gradient(90deg, rgb(156, 177, 247) 0%, rgb(103, 4, 4) 35%, rgb(255, 251, 0) 100%);
+    box-shadow: 0 2px 20px rgb(0 0 0 / 50%);
+    font-weight: 700;
+}
+
+body {
+    display: flex;
+    padding: 0 24px;
+    background-color: #ff7b00c4;
+    background-size: cover;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-cart h2 {
+    margin: 4%;
+    padding: 0;
+    color: rgb(4 15 64 / 72%);
+    text-align: center;
+}
+
+input[type=email],
+input[type=password] {
+    width: 100%;
+    padding: 12px 5px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 2px solid #ADADAD;
+    background-color: transparent;
+    transition: all .25s;
+    color: #bdb9b9;
+}
+
+.login-cart {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 5% 3% 2%;
+    width: 350px;
+    background-color: #ffffffc6;
+    border-radius: 5%;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 50%);
+}
+
+div > p {
+    text-align: center;
+    font-size: 10px;
+    margin: 20% 0 10%;
+    color: #847d7d;
+}
+
+.password {
+    position: relative;   
+}
+
+.password-control {
+    position: absolute;
+    color: #ADADAD;
+    top: 35%;
+    right: 1%;
+}
+
+form > p:nth-child(1) {
+    position: relative;
+}
+
+form label {
+    position: absolute;
+    opacity: 0.6;
+    left: 0.5rem;
+    pointer-events: none;
+    color: #ADADAD;
+    transition: all .22s;
+    top: 40%;
+    transform: translateY(-50%);
+    display: block;
+}
+
+
+form input:focus {
+    border: none;
+    border-bottom: 3px solid #ff0000;
+    background-color: transparent;
+    outline: 0;
+}
+
+form input:focus+label,
+form input:hover+label {
+    top: 0;
+    font-size: 1.125rem;
+    transform: translateY(0);
+    left: 0;
+    opacity: 1;
+}
