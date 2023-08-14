@@ -1,0 +1,209 @@
+:root{
+    cursor: url("img/cursor.png"), pointer;
+}
+
+
+* {
+    font-family: 'Montserrat', serif;
+}
+
+
+a {
+    text-decoration: none;
+    text-transform: none;
+    color: #0b0b0b;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+body {
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.head-nav-item,
+.item,
+.main-iten {
+    margin: .8em;
+}
+
+
+main {
+    margin: 3em 4em;
+}
+
+li {
+    cursor: pointer;
+    list-style-type: none;
+}
+
+
+/*------Header-------*/
+
+.logohead img {
+    width: 170px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #0b0b0b;
+}
+
+.header-nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    text-transform: uppercase;
+}
+
+.head-nav-item{
+    border: none; outline: none;
+    transition: .45s;
+    cursor: pointer;
+    background: transparent;
+    font-weight: 600;
+    
+}
+
+.head-nav-item:hover {
+    font-size: 120%;
+}
+
+/*------Flag-------*/
+.dropbtn {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 140px;
+}
+
+.dropbtn
+{
+  background: url('https://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/16/United-Kingdom-flag-icon.png') no-repeat left center;
+  padding-left: 25px;
+  width: 40px;
+}
+
+.dropbtn::after {
+    background: rgba(0, 0, 0, 0) url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-16.png") no-repeat scroll center center;
+    content: "";
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 9px;
+    width: 16px;
+}
+
+.dropdown-content a:first-child
+{
+  background: url('https://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/16/United-Kingdom-flag-icon.png') no-repeat left center;
+}
+
+.dropdown-content a:last-child
+{
+  background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png') no-repeat left center;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 2px 0 2px 25px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*oroshen*/
+.OROSHEN-info {
+    position: sticky;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/*navigation*/
+
+.intro-info {
+    font-size: 18px;
+    line-height: 24px;
+    color: #050505;
+
+}
+
+/*------main-------*/
+
+.container{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    align-items: flex-start;
+}
+
+.main-photo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-containt h1 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    width: 900px;
+}
+
+.main-containt p {
+    margin-top: 20px;
+    font-size: 13px;
+    width: 900px;
+}
+
+/*------footer-------*/
+
+.socials{
+    padding-left: 1px;
+}
+
+.vk{
+    margin: -32px ;
+}
+
+.logo img{
+    width: 170px;
+}
+
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    height: 165px;
+}
+
+
