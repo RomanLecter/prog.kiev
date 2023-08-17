@@ -211,6 +211,7 @@ label {
 
 /*produkt*/
 
+
 .discount-page {
     font-family: 'League Gothic';
     font-style: normal;
@@ -226,7 +227,9 @@ label {
     column-gap: 60px;
     justify-items: center;
     align-items: end;
+    
 }
+
 
 .discount-title {
     grid-column: 2 / 4;
@@ -331,6 +334,13 @@ label {
     font-weight: 600;
     border: 2px solid #9b7826;
 }
+
+.image-container {
+    background-image: url("img/beecostum.png");
+    height: 174px;
+    background-repeat: no-repeat;
+    position: initial;
+  }
 
 /*footer*/
 
@@ -438,4 +448,5 @@ footer h1 {
     color: #9b7826;
     margin: 1% 5%;
 }
+
 
