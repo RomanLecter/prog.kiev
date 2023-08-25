@@ -1,0 +1,126 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
+header .nav-item a {
+    color: #ffffff;
+    transition: all, .2s;
+}
+
+header .nav-item a:hover {
+    color: #0dd42b;
+}
+
+header {
+    background-image: url(./img/bg-header.png);
+    background-size: cover;
+}
+
+.header-first {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.form {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-item {
+    font-size: 20.4px;
+    line-height: 1.2;
+}
+
+.form-group button {
+    background-color: #0dd42b;
+    border-radius: 0;
+}
+
+.form-group h1 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 23.8px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.fa-stack-1x,.fa-stack-2x {
+    position: absolute;
+    top: -4px;
+    left: 3px;
+    width: 100%;
+    text-align: center
+}
+
+#text-input,
+#email,
+#tel-input {
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    text-align: center;
+    font-size: 18.8px;
+    border-radius: 0;
+
+}
+
+.intro h1 {
+    text-align: center;
+    font-size: 48px;
+    line-height: 1.2;
+    color: #020202;
+}
+
+.text-intro {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #020202;
+    font-weight: 400;
+}
+
+.services {
+    background-image: url(./img/bg-blok3.jpg);
+    height: 410px;
+}
+
+.services p {
+    margin-top: 1em;
+    font-size: 24.3px;
+    line-height: 1.2;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer {
+    background: rgba(0, 0, 0, 1)
+}
+
+
+.nav-item a {
+    color: #ffffff;
+    transition: all, .2s;
+}
+
+.nav-item a:hover {
+    color: #0dd42b;
+}
+
+
+@media (max-width: 480px) { 
+    .nav-menu-footer {
+        display: flex;
+        flex: column;
+    }
+ }
+ 
+@media (max-width: 767px) { 
+    footer {
+        display: flex;
+        flex: column;
+    }
+ }
+
+@media (min-width: 768px) and (max-width: 979px) { 
+    .nav-1 {
+        display: flex;
+        flex: column;
+    }
+ }
