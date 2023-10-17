@@ -39,14 +39,14 @@
         document.write("<div style='color: red; text-align:center'>")
         document.write("<br>Ромб<br>")
         document.write("<div style='text-align:center;'>")
-        for(var h = 0; h < 10; h++){
+        for(var h = 0; h < 8; h++){
             for(var i = 0; i < h; i++){
                 document.write("&nbsp $ &nbsp");   
             }
             document.write("<br>");
         }
-        for(var j = 0; j < 10; j++){
-            for(var k = 10; k > j; k--){
+        for(var j = 0; j < 8; j++){
+            for(var k = 8; k > j; k--){
                 document.write("&nbsp $ &nbsp");  
             }
             document.write("<br>");
