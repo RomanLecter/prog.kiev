@@ -1,31 +1,47 @@
 //3 задача
 
-function printNumbers(a, b) {
+function main() {
+  // Ввод данных
+
+  let a = Number(prompt("Введите A: "));
+  let b = Number(prompt("Введите B: "));
+
   // Проверка на корректность входных данных
 
-  if (typeof a !== "number" || typeof b !== "number") {
-    console.log("A и B должны быть целыми числами.");
-    return;
-  }
-  if (a > b) {
-    console.log("A должно быть меньше или равно B.");
-    return;
-  }
-
-  // Вывод чисел в порядке возрастания или убывания
-
   if (a < b) {
+    let sum = 0;
     for (let i = a; i <= b; i++) {
-      console.log(i);
+      sum += i;
     }
+    console.log("Сумма чисел от A до B равна " + sum);
   } else {
-    for (let i = b; i >= a; i--) {
-      console.log(i);
-    }
+    console.log("A должно быть меньше B.");
   }
 }
 
 // Тестирование
 
-printNumbers(1, 10);
-printNumbers(10, 1);
+main();
+
+function main() {
+  // Ввод данных
+
+  let a = Number(prompt("Введите A: "));
+  let b = Number(prompt("Введите B: "));
+
+  // Проверка на корректность входных данных
+
+  if (a < b) {
+    for (let i = a; i <= b; i++) {
+      if (i % 2 !== 0) {
+        console.log(i);
+      }
+    }
+  } else {
+    console.log("A должно быть меньше B.");
+  }
+}
+
+// Тестирование
+
+main();
