@@ -64,6 +64,17 @@ body {
 .game-box h4 b {
     font-weight: 600;
 }
+
+.game-box h4 {
+    font-weight: 600;
+}
+
+#heading {
+    font-size: 18px;
+    color: black;
+    top: 150px;
+}
+
 .game-box .guesses-text b {
     color: #cf1919de;
 }
