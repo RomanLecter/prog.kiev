@@ -4,7 +4,7 @@ const keyboardDiv = document.querySelector(".keyboard");
 const hangmanImage = document.querySelector(".hangman-box img");
 const gameModal = document.querySelector(".full-game");
 const playAgainBtn = gameModal.querySelector("button");
-const score = 0; 
+
 
 // Инициализация игровых переменных
 let currentWord, correctLetters, wrongGuessCount;
@@ -78,3 +78,17 @@ for (let i = 1072; i <= 1103; i++) {
 getRandomWord();
 playAgainBtn.addEventListener("click", getRandomWord);
 
+// строка весело?
+var leftOffset = 0;
+
+var moveHeading = function () {
+    $("#heading").offset({ left: leftOffset });
+
+    leftOffset++;
+
+    if (leftOffset > 1500) {
+        leftOffset = 0;
+    }
+};
+
+setInterval (moveHeading, 30);
