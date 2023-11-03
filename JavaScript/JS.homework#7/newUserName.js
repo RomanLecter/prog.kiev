@@ -12,12 +12,34 @@ function createNewUser() {
     lastName: lastName,
     birthday: birthday,
   };
+  
+    function formatDateToISO(dateString) {
+  // Разделяем строку по точке
+  const parts = dateString.split('.');
+
+ // Проверяем, находится ли строка даты в ожидаемом формате
+  if (parts.length === 3) {
+   // Дополняем одиночные цифры ведущими нулями
+    const day = parts[0].padStart(2, '0');
+    const month = parts[1].padStart(2, '0');
+    const year = parts[2];
+
+    // Возвращаем дату в формате ISO 8601
+    return `${year}-${month}-${day}`;
+  } else {
+    throw new Error('Неверный формат даты. Пожалуйста, используйте формат ДД.ММ.ГГГГ.');
+  }
+}
+
 
   // Добавляем в объект пользователя метод getAge()
-  newUser.getAge = function() {
+   newUser.getAge = function() {
     const today = new Date();
-    const birthDate = new Date(birthday);
+    console.log('birthday', birthday)
+    const isoDate = formatDateToISO(`${birthday}`);
+    const birthDate = new Date(isoDate);
     const age = today.getFullYear() - birthDate.getFullYear();
+    console.log('age', age)
     return age;
   };
 
