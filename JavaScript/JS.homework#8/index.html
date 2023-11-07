@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Страница c дивами</title>
+</head>
+<body>
+  <h1>Создание div с произвольным текстом</h1>
+  <button id="create-div">Создать div</button>
+
+  <script>
+    // Переменная для хранения количества созданных div
+    var count = 0;
+
+    // Обработчик события click для кнопки
+    document.getElementById("create-div").addEventListener("click", function() {
+      // Создаем новый div
+      var div = document.createElement("div");
+
+      // Задаем произвольный текст
+      div.innerHTML = "Текст div #" + ++count;
+
+      // Добавляем div в DOM
+      document.body.appendChild(div);
+
+      // Если создано 11 div, удаляем все div
+      if (count == 11) {
+        document.body.querySelectorAll("div").forEach(function(div) {
+          div.remove();
+        });
+        count = 0;
+      }
+    });
+  </script>
+</body>
+</html>
+
